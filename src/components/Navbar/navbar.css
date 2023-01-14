@@ -1,0 +1,192 @@
+.navbar {
+  /* background-color: rgba(0, 0, 0, 0.625);
+   */
+  background-color: rgb(15, 17, 17);
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 20px;
+  z-index: 5;
+}
+p {
+  margin: 0;
+  font-weight: bold;
+  padding: 0;
+
+  /* font-weight: bold; */
+  font-size: 17px;
+}
+.logo {
+  object-fit: cover;
+  width: 80px;
+  height: 40px;
+}
+.logo-text {
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 6px;
+}
+.logo-container {
+  width: 100px;
+  height: 40px;
+}
+/* a {
+  color: #fff;
+}
+a:focus {
+  color: #fff;
+}
+a:visited {
+  color: #fff;
+} */
+.dropdown-container {
+  display: flex;
+  align-items: center;
+}
+.cart-icon {
+  color: #fff;
+}
+.cart-icon:visited {
+  color: #fff;
+}
+.cart-icon:focus {
+  color: #fff;
+}
+
+.products-link {
+  color: #fff;
+}
+.products-page {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.products-link:visited {
+  color: #fff;
+}
+.products-link:focus {
+  color: #fff;
+}
+.dropdown {
+  float: left;
+  /* overflow: hidden; */
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 16px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  /* top: 100px; */
+
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.logout-container {
+  display: flex;
+  align-items: center;
+}
+.logout-icon {
+  color: red;
+  width: 50px;
+  height: 50px;
+  padding-left: 10px;
+}
+/* .logout-icon:hover {
+  background-color: #ddd;
+} */
+.logout-flex {
+  display: flex;
+  align-items: center;
+  /* color: #fff; */
+  color: black;
+}
+.logout-flex a {
+  color: red;
+}
+
+.dropdown {
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+}
